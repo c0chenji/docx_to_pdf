@@ -128,12 +128,15 @@ def add_signature_field(outpath,x,y):
     doc.Save(outpath, 0)
 
 if __name__ == "__main__":
-    # test1 single line form
+    # test1.docx  
+    # name:__ age___
     #input_list [name, age]
     target1 = Docx("test1.docx").read()
     convert_to_pdf(target1, ["John", 30], "output1.pdf")
 
-    # test2
+    # test2.docx 
+    # name:___ age___
+    # phone:___ school___
     #input_list [name, age, phone, school]
     target2 = Docx("test2.docx").read()
     convert_to_pdf(target2, ["John", 30, 123123, "blabla"], "output2.pdf")
