@@ -125,7 +125,7 @@ def add_signature_field(output,x,y):
         DigitalSignatureField.e_annotating_formfilling_signing_allowed)
 
     # Save the PDFDoc. Once the method below is called, PDFNet will also sign the document using the information provided.
-    doc.Save(outpath, 0)
+    doc.Save(output, 0)
 
 if __name__ == "__main__":
     # test1.docx  
