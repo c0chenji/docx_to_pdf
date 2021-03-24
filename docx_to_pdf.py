@@ -104,8 +104,8 @@ def convert_to_pdf(paragraphs, input_list, output_file):
     start_y -= 20
     add_signature_field(output_file,start_x,start_y)
 
-def add_signature_field(outpath,x,y):
-    doc = PDFDoc(outpath)
+def add_signature_field(output,x,y):
+    doc = PDFDoc(output)
     page1 = doc.GetPage(1)
     # Create a new signature form field in the PDFDoc. The name argument is optional;
     # leaving it empty causes it to be auto-generated. However, you may need the name for later.
